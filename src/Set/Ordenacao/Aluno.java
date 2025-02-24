@@ -34,6 +34,7 @@ public class Aluno implements Comparable<Aluno> {
     public int hashCode() {
         return Objects.hash(getMatricula());
     }
+
     @Override
     public int compareTo(Aluno a) {
         return this.nome.compareToIgnoreCase(a.getNome());
